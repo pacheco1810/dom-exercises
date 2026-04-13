@@ -51,7 +51,7 @@ Here are some of the projects included in this repository:
 ## 🌐 Connect with me
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/TU-USUARIO">
+  <a href="https://www.linkedin.com/in/%C3%A1ngel-andrei-esp%C3%ADritu-pacheco-22511a209" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin" height="40"/>
   </a>
   &nbsp;&nbsp;&nbsp;
