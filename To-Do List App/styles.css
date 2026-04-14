@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+:root{
+    /*Colors*/
+    --primary-color: #005EB8;
+    --secondary-color: #536471;
+    --tertiary-color: #2E7D32;
+    --neutral-color: #f5f6f9;
+    /*Fonts*/
+    --headline-font: "Manrope", sans-serif;
+    --body-font: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--neutral-color);
+    font-family: var(--body-font);
+    line-height: 1.5;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.workspace{
+    padding: 2rem;
+}
+
+.workspace-header, .task-form{
+    margin-bottom: 2rem;
+}
+
+.workspace-header h1, .task-section h2{
+    font-family: var(--headline-font);
+    font-weight: 800;
+}
+
+.workspace-header span{
+    font-size: clamp(1rem, 0.4403rem + 2.3881vw, 1.3rem);
+    font-weight: 500;
+    letter-spacing: 0.2em;  
+    color: var(--primary-color);
+}
+
+.workspace-header h1{
+    font-size: clamp(2.7rem, 0.8343rem + 7.9602vw, 3.7rem);
+}
+
+.workspace-header time, footer .labelCopyright{
+    font-size: clamp(0.8rem, 0.4269rem + 1.592vw, 1rem);
+    color: rgba(from var(--secondary-color) r g b / 60%);
+}
+
+.task-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(from var(--secondary-color) r g b / 20%);
+    box-shadow: inset 0 0 .3rem rgba(from var(--secondary-color) r g b / 50%);
+    border-radius: 2rem;
+    overflow: hidden;
+    padding: .6rem;
+}
+
+.input-wrapper input, .add-btn{
+    font-size: clamp(1rem, 0.6269rem + 1.592vw, 1.2rem);
+    font-weight: 600;
+}
+
+.input-wrapper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.input-wrapper input {
+    flex: 1;
+    width: 100%;
+    height: 8vh;
+    padding: .6rem .6rem .6rem 2.5rem; 
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.input-wrapper input:not(:placeholder-shown){
+  font-weight: 400;
+  color: rgba(from var(--primary-color) r g b / 80%);
+}
+
+
+.input-icon {
+    position: absolute; 
+    left: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    color: rgba(from var(--primary-color) r g b / 80%);
+}
+
+.input-icon i, .task-list li .delete-btn i {
+    font-size: clamp(1.2rem, 0.6269rem + 1.592vw, 1.3rem);
+}
+
+.add-btn {
+    display: block;
+    width: 100%;
+    padding: .6rem .8rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.task-list{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.task-list li{
+    display:flex;
+    min-height: 13vh;
+    margin-bottom: .6rem;
+    padding: 1.4rem;
+    background-color: white;
+    border-radius: 1.2rem;
+}
+
+.task-label{
+    margin: 0 1rem;
+}
+
+.task-list li .delete-btn{
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+}
+
+.task-list li .delete-btn i{
+    color:var(--secondary-color);
+    cursor: pointer;
+}
+
+footer{
+    padding: 1rem;
+    text-align: center;
+}
