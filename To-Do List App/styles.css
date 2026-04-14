@@ -133,6 +133,12 @@ body{
     border-radius: 1.2rem;
     color: white;
     cursor: pointer;
+    transition: all 1s;
+}
+
+.add-btn:hover{
+    background: rgba(from var(--primary-color) r g b / 90%);
+    outline:2px solid var(--secondary-color);
 }
 
 .task-list{
