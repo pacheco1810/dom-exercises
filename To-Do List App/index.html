@@ -44,25 +44,30 @@
                     <h2 class="visually-hidden">Task list</h2>
 
                     <ul class="task-list">
-
-                        <li class="task-item">
-                            <input type="checkbox" />
-                            <label class="task-label">Review architectural mockups for project</label>
-                            <button 
-                                type="button" 
-                                class="delete-btn"
-                                aria-label="Delete task: Buy groceries"
-                            >
-                                <i class="fa-solid fa-trash-can" aria-hidden="true"></i>
-                            </button>
-                        </li>
-
-                        
-
                     </ul>
                 </section>
                 
             </section>
+
+            <div class="modal" id="delete-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+                <div class="modal-content">
+                    <div class="alert-logo">
+                        <span class="alert-icon" aria-hidden="true"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                    </div>
+
+                    <h2 id="modal-title">Delete Task?</h2>
+                    
+                    <p id="modal-desc">This action cannot be undone. This task and all associated
+                        sub-tasks will be permanently removed from your worksapace.
+                    </p>
+
+                    <div class="modal-actions">
+                        <button type="button" class="cancel-btn">Cancel</button>
+                        <button type="button" class="confirm-delete-btn">Yes, Delete</button>
+                    </div>
+
+                </div>
+            </div>
         </main>
         <footer>
             <p class="labelCopyright" id="paraCopyright">&copy; <span id="yearCopyright"></span> @ang.dev>_. All rights reserved.</p>
