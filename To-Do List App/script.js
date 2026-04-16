@@ -67,10 +67,10 @@ function createTaskElement(task) {
   li.dataset.id = task.id;
 
   li.innerHTML = `
-    <label class="task-checkbox">
+    <label class="task-checkbox flex-center">
       <input type="checkbox" ${task.completed ? "checked" : ""} />
 
-      <span class="checkmark">
+      <span class="checkmark flex-center">
         <i class="fa-solid fa-check" aria-hidden="true"></i>
       </span>
 
@@ -81,7 +81,7 @@ function createTaskElement(task) {
       type="button" 
       class="delete-btn"
       aria-label="Delete task: ${task.text}">
-      <i class="fa-solid fa-trash-can" aria-hidden="true"></i>
+      <i class="fa-solid fa-trash-can transition-color delete-icon" aria-hidden="true"></i>
     </button>
   `;
 
@@ -203,7 +203,7 @@ cancelBtn.addEventListener("click", closeModal);
 // =========================
 confirmBtn.addEventListener("click", () => {
   if (taskToDelete) {
-    const li = taskToDelete; // 🔥 guardamos referencia
+    const li = taskToDelete; 
     const id = li.dataset.id;
 
     let tasks = getTasks();
@@ -214,7 +214,7 @@ confirmBtn.addEventListener("click", () => {
     li.classList.add("removing");
 
     setTimeout(() => {
-      li.remove(); // ✅ ya no depende de taskToDelete
+      li.remove(); 
     }, 300);
   }
 
