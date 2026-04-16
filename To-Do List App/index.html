@@ -9,10 +9,16 @@
         <script src="https://kit.fontawesome.com/22e6d018f3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="app-header">
-        <!-- Logo -->
-        <!-- Search -->
-        <!-- User -->
+        <header class="app-header flex-center">
+            <div class="search-wrapper flex-center">
+                <label for="search-input" class="visually-hidden">Search a task</label>
+                <span class="search-icon flex-center" aria-hidden="true"><i class="fa-solid fa-magnifying-glass transition-color"></i></span>
+                <input 
+                type="text"
+                id="search-input"
+                name="search"
+                placeholder="Search tasks..." />
+            </div>
         </header>
 
         <main>
@@ -26,10 +32,10 @@
                     <time id="current-date" datetime=""></time>
                 </header>
 
-                <form class="task-form">
+                <form class="task-form flex-center">
                     <label for="task-input" class="visually-hidden">Add a new task</label>
-                    <div class="input-wrapper">
-                        <span class="input-icon" aria-hidden="true"><i class="fa-solid fa-file-pen"></i></span>
+                    <div class="input-wrapper flex-center">
+                        <span class="input-icon flex-center" aria-hidden="true"><i class="fa-solid fa-file-pen"></i></span>
                         <input 
                         type="text"
                         id="task-input"
@@ -49,9 +55,9 @@
                 
             </section>
 
-            <div class="modal" id="delete-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
-                <div class="modal-content">
-                    <div class="alert-logo">
+            <div class="modal flex-center" id="delete-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+                <div class="modal-content flex-center transition-transform transition-opacity">
+                    <div class="alert-logo flex-center">
                         <span class="alert-icon" aria-hidden="true"><i class="fa-solid fa-triangle-exclamation"></i></span>
                     </div>
 
@@ -61,16 +67,16 @@
                         sub-tasks will be permanently removed from your worksapace.
                     </p>
 
-                    <div class="modal-actions">
-                        <button type="button" class="cancel-btn">Cancel</button>
-                        <button type="button" class="confirm-delete-btn">Yes, Delete</button>
+                    <div class="modal-actions flex-center">
+                        <button type="button" class="cancel-btn transition-transform">Cancel</button>
+                        <button type="button" class="confirm-delete-btn transition-transform">Yes, Delete</button>
                     </div>
 
                 </div>
             </div>
         </main>
         <footer>
-            <p class="labelCopyright" id="paraCopyright">&copy; <span id="yearCopyright"></span> @ang.dev>_. All rights reserved.</p>
+            <p class="labelCopyright" id="paraCopyright">&copy; <span id="yearCopyright"></span>. All rights reserved.</p>
         </footer>
         <script type="text/javascript" src="script.js"></script>
     </body>
