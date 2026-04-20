@@ -119,7 +119,6 @@ body, input, button{
     width: 100%;
     height: 2rem;
     padding: .6rem .6rem .6rem 2rem;
-    font-size: 1rem;
     color: var(--text-muted);
     background-color: transparent;
     border: none;
@@ -290,7 +289,6 @@ footer .labelCopyright{
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -366,7 +364,6 @@ footer .labelCopyright{
 /* Check icon */
 .checkmark i {
     opacity: 0;
-    font-size: 1rem;
     transform: scale(0.5);
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
@@ -493,19 +490,151 @@ footer{
 }
 
 
-@media screen and (max-width: 577px) {
+@media screen and (min-width: 577px) {
+    /* =========================
+    HEADER
+    ========================= */
+    .search-wrapper{
+        height: 2.5rem;
+        border-radius: 2.5rem;
+    }
+
+    .search-wrapper input{
+        padding: .6rem .6rem .6rem 2.2rem;
+        font-size: 1.2rem;
+    }
+
+    /* Search icon inside input */
+    .search-icon{
+        left: .7rem;
+        font-size: 1.1rem;
+    }
+
+    /* =========================
+    WORKSPACE
+    ========================= */
+    /* Section label */
+    .workspace-header span{
+        font-size: clamp(1.250rem, calc(0.483rem + 2.116vw), 1.500rem); 
+        letter-spacing: 0.3em;  
+    }
+
+    /* Main title */
+    .workspace-header h1{
+        margin-bottom: .5rem;
+        font-size: clamp(3.688rem, calc(1.194rem + 6.878vw), 4.500rem); 
+    }
+
+    /* Date text and footer text */
+    .workspace-header time, 
+    footer .labelCopyright{
+        font-size: clamp(1.000rem, calc(0.233rem + 2.116vw), 1.2rem);
+    }
+
+    /* =========================
+    FORM
+    ========================= */
+
+    .task-form{
+        padding: 0 .8rem .8rem .8rem;
+    }
+
+    /* Shared typography */
+    .input-wrapper input, 
+    .add-btn{
+        font-size: clamp(1.2rem, 0.2794rem + 2.5397vw, 1.5rem);
+    }
+
+    /* Input field */
+    .input-wrapper input {
+        height: 5rem;
+        padding: .8rem .8rem .8rem 3rem;
+    }
+
+    /* Icon sizing */
+    .input-icon i, 
+    .delete-icon {
+        font-size: clamp(1.3rem, 0.3794rem + 2.5397vw, 1.6rem);
+    }
+
+    /* Submit button */
+    .add-btn {
+        padding: .8rem 1rem;
+    }
+
+    /* =========================
+    TASK LIST
+    ========================= */
+
+    /* Task item */
+    .task-item{
+        margin-bottom: 1rem;
+        padding: 2rem;
+        font-size: clamp(1.2rem, 0.5862rem + 1.6931vw, 1.4rem);
+        border-radius: 1.5rem;
+    }
+
+    /* =========================
+    CUSTOM CHECKBOX
+    ========================= */
+    /* Custom circle */
+    .checkmark {
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+
+    /* Check icon */
+    .checkmark i {
+        font-size: 1.2rem;
+    }
+
+    /* =========================
+    MODAL
+    ========================= */
+
+    /* Modal content */
+    .modal-content {
+        max-width: 600px;
+        padding: 2rem;
+        font-size: clamp(1.1rem, 0.4862rem + 1.6931vw, 1.3rem);
+        border-radius: 1.2rem;
+    }
+
+    /* Alert icon */
+    .alert-logo{
+        width: 5rem;
+        height: 5rem;
+        font-size: 3rem;
+        border-radius: 1.3rem;
+    }
+
+    /* Modal buttons container */
+    .modal-actions{
+        gap: 1rem;
+    }
+
+    /* Buttons */
+    .modal-actions button{
+        height: 50px;
+        font-size: clamp(1.1rem, 0.4862rem + 1.6931vw, 1.3rem);
+    }
+
+    /* =========================
+    FOOTER
+    ========================= */
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 769px) {
+
 }
 
-@media screen and (max-width: 993px) {
+@media screen and (min-width: 993px) {
 }
 
-@media screen and (max-width: 1201px) {
+@media screen and (min-width: 1201px) {
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1400px) {
 }
 
 @media print {header[class ~= "app-header"], footer { display: none; } }
