@@ -108,7 +108,7 @@ body, input, button{
 
 .search-wrapper{
     position: relative;
-    width: 50%;
+    width: 65%;
     height: 2rem;
     margin: 1rem;
     background-color: var(--bg-soft);
@@ -619,22 +619,170 @@ footer{
         font-size: clamp(1.1rem, 0.4862rem + 1.6931vw, 1.3rem);
     }
 
-    /* =========================
-    FOOTER
-    ========================= */
-}
-
-@media screen and (min-width: 769px) {
-
 }
 
 @media screen and (min-width: 993px) {
-}
 
-@media screen and (min-width: 1201px) {
-}
+    /* =========================
+    HEADER
+    ========================= */
 
-@media screen and (min-width: 1400px) {
+    .search-wrapper{
+        width: 40%;
+        height: 2.2rem;
+        margin: 1rem;
+        border-radius: 2rem;
+    }
+
+    .search-wrapper input{
+        padding: .6rem .6rem .6rem 2.8rem;
+    }
+
+    /* Search icon inside input */
+    .search-icon{   
+        left: .8rem;
+    }
+
+    /* =========================
+    WORKSPACE
+    ========================= */
+
+    .workspace{
+        padding: 2rem;
+    }
+
+    /* Spacing between sections */
+    .workspace-header, 
+    .task-form{
+        margin-bottom: 2rem;
+    }
+
+    /* Section label */
+    .workspace-header span{
+        font-size: clamp(1rem, 0.4403rem + 2.3881vw, 1.3rem);
+        letter-spacing: 0.2em;  
+    }
+
+    /* Main title */
+    .workspace-header h1{
+        font-size: clamp(2.7rem, 0.8343rem + 7.9602vw, 3.7rem);
+    }
+
+    /* Date text and footer text */
+    .workspace-header time, 
+    footer .labelCopyright{
+        font-size: clamp(0.8rem, 0.4269rem + 1.592vw, 1rem);
+    }
+
+    /* =========================
+    FORM
+    ========================= */
+
+    .task-form{
+        flex-direction: row !important;
+        padding: 0 1rem;
+    }
+
+    /* Shared typography */
+    .input-wrapper input, 
+    .add-btn{
+        font-size: clamp(1rem, 0.6269rem + 1.592vw, 1.2rem);
+        font-weight: 500;
+    }
+
+    /* Input field */
+    .input-wrapper input {
+        height: 4rem;
+        padding: .6rem .6rem .6rem 2.5rem;
+    }
+
+    /* Icon sizing */
+    .input-icon i, 
+    .delete-icon {
+        font-size: clamp(1.2rem, 0.6269rem + 1.592vw, 1.3rem);
+    }
+
+    /* Submit button */
+    .add-btn {
+        width: 30%;
+        padding: .6rem .8rem;
+    }
+    
+    /* =========================
+    TASK LIST
+    ========================= */
+
+    /* Task item */
+    .task-item{
+        margin-bottom: 1rem;
+        padding: 1.2rem;
+        font-size: 1.2rem;
+        border-radius: 1.4rem;
+    }
+
+    /* =========================
+    CUSTOM CHECKBOX
+    ========================= */
+    /* Checkbox wrapper */
+    .task-checkbox {
+        gap: .6rem;
+        cursor: pointer;
+        user-select: none;
+
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Custom circle */
+    .checkmark {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    /* Check icon */
+    .checkmark i {
+        font-size: 1rem;
+    }
+
+    /* =========================
+    MODAL
+    ========================= */
+
+    /* Modal content */
+    .modal-content {
+        align-items: baseline;
+        gap: 1.2rem;
+        max-width: 520px;
+        height: 400px;
+        text-align: left;
+        border-radius: 1.8rem;
+    }
+
+    /* Alert icon */
+    .alert-logo{
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.8rem;
+        background-color: rgba(from var(--neutral-color) r g b / 100%);
+        border-radius: 1rem;
+    }
+
+    /* Modal buttons container */
+    .modal-actions{
+        display: flex;
+        width: 100%;
+        gap: 1.6rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Buttons */
+    .modal-actions button{
+        width: 200px;
+        height: 60px;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        border-radius: 1rem;
+    }
 }
 
 @media print {header[class ~= "app-header"], footer { display: none; } }
