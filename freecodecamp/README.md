@@ -42,7 +42,7 @@ freecodecamp/
 3. Start typing to test the character counter
 
 ##  Concepts Covered
-# ![](https://img.shields.io/badge/-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=F7DF1E) JavaScript
+### ![](https://img.shields.io/badge/-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=F7DF1E) JavaScript
 getElementById() and querySelector()
 
 addEventListener() (input, click, submit events)
@@ -55,7 +55,7 @@ Dynamic CSS styling with JavaScript
 
 Form validation
 
-# ![](https://img.shields.io/badge/-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=E34F26) HTML
+### ![](https://img.shields.io/badge/-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=E34F26) HTML
 
 Semantic structure
 
@@ -63,7 +63,7 @@ Accessible forms with labels
 
 ARIA attributes for screen readers
 
-# ![](https://img.shields.io/badge/%20-1572B6?style=for-the-badge&logo=CSS&logoColor=white&labelColor=1572b6) CSS
+### ![](https://img.shields.io/badge/%20-1572B6?style=for-the-badge&logo=CSS&logoColor=white&labelColor=1572b6) CSS
 
 Responsive design with Flexbox/Grid
 
@@ -73,7 +73,7 @@ Google Fonts integration
 
 Gradient backgrounds and modern styling
 
-## Related Resources
+# Related Resources
 <p><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" target="_blank"> freeCodeCamp DOM</a></p>
 
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank">MDN DOM Documentation</a></p>
