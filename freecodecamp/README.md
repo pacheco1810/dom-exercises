@@ -79,7 +79,7 @@ Gradient backgrounds and modern styling
 ## Related Resources
 <p><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" target="_blank"> freeCodeCamp DOM</a></p>
 
-<p><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" target="_blank">MDN DOM Documentation</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank">MDN DOM Documentation</a></p>
 
 ##  License
 © freeCodeCamp Exercises - Completed for learning purposes
