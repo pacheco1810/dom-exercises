@@ -57,85 +57,91 @@ Test cases to verify:
 - Type 50 characters → Shows "Character Count: 50/50" in red
 
 ## Concepts Practiced
-# JavaScript (DOM Manipulation)
-getElementById() to select elements
+### JavaScript (DOM Manipulation)
+<ul>
+<li>getElementById() to select elements</li>
 
-addEventListener() with input event
+<li>addEventListener() with input event</li>
 
-value property to get textarea content
+<li>value property to get textarea content</li>
 
-length property to count characters
+<li>length property to count characters</li>
 
-slice() method to trim excess characters
+<li>slice() method to trim excess characters</li>
 
-classList.add() and classList.remove() for dynamic styling
+<li>classList.add() and classList.remove() for dynamic styling</li>
 
-Event Handling
-Real-time updates using input event
+<li>Event Handling
+Real-time updates using input event</li>
 
-Preventing character overflow with JavaScript
+<li>Preventing character overflow with JavaScript</li>
+</ul>
 
-# CSS 
-CSS custom properties (variables)
+### CSS 
+<ul>
+<li>CSS custom properties (variables)</li>
 
-Linear gradients
+<li>Linear gradients</li>
 
-Flexbox for centering
+<li>Flexbox for centering</li>
 
-Responsive design
+<li>Responsive design</li>
 
-Dark theme with accent colors
+<li>Dark theme with accent colors</li>
+</ul>
 
-# HTML5
-Semantic structure with main element
+### HTML5
+<ul>
+<li>Semantic structure with main element</li>
 
-Proper id attributes for DOM selection
+<li>Proper id attributes for DOM selection</li>
+</ul>
 
 ## Key Implementation Details
-# JavaScript Logic:
-const textarea = document.getElementById("text-input");
-const para = document.getElementById("char-count");
-const limit = 50;
-
-textarea.addEventListener("input", function(e){
-    if(textarea.value.length > limit){
-        textarea.value = textarea.value.slice(0, limit);
-    } else {
-        para.innerText = `Character Count: ${textarea.value.length}/50`;
-        if(textarea.value.length === limit){
-            para.classList.add("paraFull");
+### JavaScript Logic:
+    const textarea = document.getElementById("text-input");
+    const para = document.getElementById("char-count");
+    const limit = 50;
+    
+    textarea.addEventListener("input", function(e){
+        if(textarea.value.length > limit){
+            textarea.value = textarea.value.slice(0, limit);
         } else {
-            para.classList.remove("paraFull");
+            para.innerText = `Character Count: ${textarea.value.length}/50`;
+            if(textarea.value.length === limit){
+                para.classList.add("paraFull");
+            } else {
+                para.classList.remove("paraFull");
+            }
         }
+    });
+
+### CSS Highlight:
+    .paraFull {
+        color: red;
     }
-});
+    
+    #text-input {
+        margin: 1rem;
+        max-width: 320px;
+        height: 4rem;
+        padding: .5rem;
+        box-shadow: 1px 2px 6px 0 var(--white-color);
+    }
 
-# CSS Highlight:
-.paraFull {
-    color: red;
-}
-
-#text-input {
-    margin: 1rem;
-    max-width: 320px;
-    height: 4rem;
-    padding: .5rem;
-    box-shadow: 1px 2px 6px 0 var(--white-color);
-}
-
-# Color Variables:
-:root {
-    --back-color: #1a1e29;
-    --blue-color: #132d46;
-    --green-color: #01c38e;
-    --white-color: #f4f4f4;
-}
+### Color Variables:
+    :root {
+        --back-color: #1a1e29;
+        --blue-color: #132d46;
+        --green-color: #01c38e;
+        --white-color: #f4f4f4;
+    }
 
 ## Customization Options
-# Modify Character Limit:
+### Modify Character Limit:
 Change const limit = 50 in script.js to any value
 
-# Change Colors:
+### Change Colors:
 Modify CSS variables in :root:
 
 --back-color (background)
@@ -146,7 +152,7 @@ Modify CSS variables in :root:
 
 --white-color (text and shadow)
 
-# Modify Fonts:
+### Modify Fonts:
 Update @import URL change font variables:
 
 --titles-font for headings
@@ -154,18 +160,21 @@ Update @import URL change font variables:
 --curren-text for body text
 
 ## File Details
-File	Purpose
-index.html	Structure with textarea and counter
-styles.css	Dark theme styling with gradients
-script.js	Real-time counting and character limit
-README.md	Documentation
+|File	|Purpose|
+|-------|-------|
+index.html	|Structure with textarea and counter
+styles.css	|Dark theme styling with gradients
+script.js	|Real-time counting and character limit
+README.md	|Documentation
 
 ## Browser Support
-Browser	Version	Status
-Chrome	90+	✅
-Firefox	88+	✅
-Safari	14+	✅
-Edge	90+	✅
+
+| Browser | Version | Status |
+|---------|--------|---------|
+|Chrome	  |   90+  |   ✅   |
+|Firefox  |   88+  |   ✅   |
+|Safari   |   14+  |   ✅   |
+|Edge  |   90+  |   ✅   |
 
 ## Contributing
 This is a freeCodeCamp DOM exercise solution.
