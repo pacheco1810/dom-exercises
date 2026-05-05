@@ -6,11 +6,17 @@ This folder contains all my DOM manipulation exercises from freeCodeCamp. Each e
 
 ##  Folder Structure
 freecodecamp/
+
 ├── README.md
+
 └── character-counter/
+
 ├── index.html
+
 ├── styles.css
+
 ├── script.js
+
 └── README.md
 
 ##  Current Exercises
@@ -39,7 +45,8 @@ Dynamic CSS styling with JavaScript
 
 Form validation
 
-# HTML
+# ![](https://img.shields.io/badge/-E34F26?style=flat-square&logo=html5&logoColor=white&labelColor=E34F26)
+
 Semantic structure
 
 Accessible forms with labels
