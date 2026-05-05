@@ -4,6 +4,19 @@
 
 This folder contains all my DOM manipulation exercises from freeCodeCamp. Each exercise is in its own subfolder with complete HTML, CSS, JavaScript, and documentation.
 
+## Tecnologies
+<p align="center">
+  <a target="_blank">
+    <img src="https://skillicons.dev/icons?i=html" />&nbsp;
+  </a>&nbsp;&nbsp;
+  <a target="_blank">
+    <img src="https://skillicons.dev/icons?i=css" />&nbsp;
+  </a>&nbsp;&nbsp;
+  <a target="_blank">
+    <img src="https://skillicons.dev/icons?i=js" />&nbsp;
+  </a>&nbsp;&nbsp;
+</p>
+
 ##  Folder Structure
 freecodecamp/
 
@@ -32,7 +45,7 @@ freecodecamp/
 3. Start typing to test the character counter
 
 ##  Concepts Covered
-# JavaScript
+# ![](https://img.shields.io/badge/-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=F7DF1E) JavaScript
 getElementById() and querySelector()
 
 addEventListener() (input, click, submit events)
@@ -45,7 +58,7 @@ Dynamic CSS styling with JavaScript
 
 Form validation
 
-# ![](https://img.shields.io/badge/-E34F26?style=flat-square&logo=html5&logoColor=white&labelColor=E34F26)
+# ![](https://img.shields.io/badge/-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=E34F26) HTML
 
 Semantic structure
 
@@ -53,7 +66,8 @@ Accessible forms with labels
 
 ARIA attributes for screen readers
 
-# CSS
+# ![](https://img.shields.io/badge/%20-1572B6?style=for-the-badge&logo=CSS&logoColor=white&labelColor=1572b6) CSS
+
 Responsive design with Flexbox/Grid
 
 CSS custom properties (variables)
@@ -63,9 +77,9 @@ Google Fonts integration
 Gradient backgrounds and modern styling
 
 ## Related Resources
-freeCodeCamp DOM Challenges
+<p><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" target="_blank"> freeCodeCamp DOM</a></p>
 
-MDN DOM Documentation
+<p><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" target="_blank">MDN DOM Documentation</a></p>
 
 ##  License
 © freeCodeCamp Exercises - Completed for learning purposes
