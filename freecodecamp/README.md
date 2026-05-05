@@ -1,8 +1,5 @@
-# freeCodeCamp DOM Exercises
-
-##  Description
-
-This folder contains all my DOM manipulation exercises from freeCodeCamp. Each exercise is in its own subfolder with complete HTML, CSS, JavaScript, and documentation.
+# <h1 align="center">freeCodeCamp DOM Exercises</h1>
+<p align="center">This folder contains all my DOM manipulation exercises from freeCodeCamp. Each exercise is in its own subfolder with complete HTML, CSS, JavaScript, and documentation.</p>
 
 ## Tecnologies
 <p align="center">
