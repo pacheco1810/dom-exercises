@@ -31,9 +31,11 @@ freecodecamp/
 
 ##  Current Exercises
 
-| Exercise | Description | Status |
-|----------|-------------|--------|
-| Character Counter | Real-time character counter with 50 character limit | ✅ Complete |
+| Exercise | Folder | Description | Status |
+|----------|--------|-------------|--------|
+| Character Counter | `character-counter/` | Real-time character counter with 50 character limit | ✅ Complete |
+| Museum Gallery Lightbox | `museum-gallery/` | Image gallery with lightbox that shows full-size images when thumbnails are clicked | ✅ Complete |
+
 
 ##  How to Run
 
