@@ -1,4 +1,4 @@
-# Museum Gallery - Lightbox | freeCodeCamp DOM Exercise
+# <p align="center"> Museum Gallery - Lightbox | freeCodeCamp DOM Exercise</p>
 
 ## Problem Description
 
@@ -48,11 +48,17 @@ Build an interactive museum gallery that displays thumbnail images. When a thumb
 
 ## Folder Structure
 freecodecamp/
+
 ├── character-counter/
+
 └── museum-gallery/
+
 ├── index.html
+
 ├── styles.css
+
 ├── script.js
+
 └── README.md
 
 
@@ -67,98 +73,88 @@ freecodecamp/
 
 ## Concepts Practiced
 ### JavaScript (DOM Manipulation & Events)
-querySelector() and getElementById() for element selection
-
-addEventListener() with click event
-
-e.target.closest() for proper event targeting
-
-Dynamic src attribute manipulation with replace()
-
-Conditional display toggling with inline styles
-
-Event Handling
-Event delegation on gallery container
-
-Closing lightbox from two sources (button + background)
-
-Preventing unintended event bubbling
+<ul>
+<li>querySelector() and getElementById() for element selection</li>
+<li>addEventListener() with click event</li>
+<li>e.target.closest() for proper event targeting</li>
+<li>Dynamic src attribute manipulation with replace()</li>
+<li>Conditional display toggling with inline styles</li>
+<li>Event Handling</li>
+<li>Event delegation on gallery container</li>
+<li>Closing lightbox from two sources (button + background)</li>
+<li>Preventing unintended event bubbling</li>
+</ul>
 
 ### CSS Features
-CSS custom properties (variables)
-
-Flexbox for centering content
-
-Fixed positioning for lightbox overlay
-
-backdrop-filter: blur() for modern glass effect
-
-rgba(from var() r g b / alpha) syntax
-
-Hover effects with transform: scale()
-
-Transitions for smooth animations
+<ul>
+<li>CSS custom properties (variables)</li>
+<li>Flexbox for centering content</li>
+<li>Fixed positioning for lightbox overlay</li>
+<li>backdrop-filter: blur() for modern glass effect</li>
+<li>rgba(from var() r g b / alpha) syntax</li>
+<li>Hover effects with transform: scale()</li>
+<li>Transitions for smooth animations</li>
+</ul>
 
 ### HTML5
-Semantic structure with main
+<ul>
+<li>Semantic structure with main</li>
+<li>Proper alt attributes for accessibility</li>
+<li>IDs for specific elements</li>
+<li>Classes for reusable styling</li>
+</ul>
 
-Proper alt attributes for accessibility
-
-IDs for specific elements
-
-Classes for reusable styling
-
-## Key Implementation Details
+## Key Implementation Details5
 ### JavaScript Logic:
-const gallery = document.querySelector(".gallery");
-const box = document.querySelector(".lightbox");
-const img = document.getElementById("lightbox-image");
-
-gallery.addEventListener("click", (e) => {
-    const image = e.target.closest(".gallery-item");
-    if (!image) return;
-    
-    const fullSrc = image.src.replace("-thumbnail", "");
-    img.src = fullSrc;
-    box.style.display = "flex";
-});
-
-const btnClose = document.getElementById("close-btn");
-btnClose.addEventListener("click", () => {
-    box.style.display = "none";
-});
-
-box.addEventListener("click", (e) => {
-    if (e.target === box) {
+    const gallery = document.querySelector(".gallery");
+    const box = document.querySelector(".lightbox");
+    const img = document.getElementById("lightbox-image");
+  
+    gallery.addEventListener("click", (e) => {
+        const image = e.target.closest(".gallery-item");
+        if (!image) return;
+        
+        const fullSrc = image.src.replace("-thumbnail", "");
+        img.src = fullSrc;
+        box.style.display = "flex";
+    });
+  
+    const btnClose = document.getElementById("close-btn");
+    btnClose.addEventListener("click", () => {
         box.style.display = "none";
-    }
-});
+    });
+    
+    box.addEventListener("click", (e) => {
+        if (e.target === box) {
+            box.style.display = "none";
+        }
+    });
 
 ### CSS Highlight:
-.lightbox {
-    position: fixed;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(from var(--back-color) r g b / 80%);
-    backdrop-filter: blur(2px);
-}
-
-.gallery-item {
-    width: 20rem;
-    height: 30rem;
-    transition: all .5s;
-}
-
-.gallery-item:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
+    .lightbox {
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(from var(--back-color) r g b / 80%);
+        backdrop-filter: blur(2px);
+    }
+    
+    .gallery-item {
+        width: 20rem;
+        height: 30rem;
+        transition: all .5s;
+    }
+    
+    .gallery-item:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 
 ## Customization Options
 ### Modify Gallery Images:
@@ -175,50 +171,20 @@ Close button style: modify #close-btn CSS
 Change width and height in .gallery-item class
 
 ## File Details
-File	Purpose
-index.html	Gallery structure with thumbnails and lightbox
-styles.css	Styling, lightbox overlay, hover effects
-script.js	Lightbox toggle and image source management
-README.md	Documentation
+|File|Purpose|
+|----|-------|
+|index.html|	Gallery structure with thumbnails and lightbox|
+|styles.css|	Styling, lightbox overlay, hover effects|
+|script.js|	Lightbox toggle and image source management|
+|README.md	|Documentation|
 
 ## Browser Support
-Browser	Version	Status
-Chrome	90+	✅
-Firefox	88+	✅
-Safari	14+	✅
-Edge	90+	✅
-
-## Edge Cases Handled
-Clicking between thumbnails correctly updates lightbox image
-
-Clicking close button hides lightbox
-
-Clicking transparent background hides lightbox
-
-Clicking on image itself does NOT close lightbox (only background)
-
-Hover scale effect doesn't affect layout
-
-e.target.closest() ensures clicking child elements still works
-
-## Key Learning Outcomes
-After completing this exercise, you will understand:
-
-How to create a modal/lightbox with fixed positioning
-
-How to toggle display property between none and flex
-
-How to use e.target.closest() for reliable event targeting
-
-How to manipulate image src attributes dynamically
-
-How to close a modal from multiple triggers
-
-How to use backdrop-filter for modern glass effects
-
-Event delegation patterns for dynamic content
-
-CSS transitions for smooth hover effects
+|Browser|	Version|	Status|
+|-------|--------|--------|
+|Chrome	|90+|	✅|
+|Firefox	|88+	|✅|
+|Safari|	14+	|✅|
+|Edge|	90+	|✅|
 
 ## Contributing
 This is a freeCodeCamp DOM exercise solution.
