@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    /*Colors*/
+    --back-color:#1a1e29;
+    --blue-color:#132d46;
+    --white-color:#f4f4f4;
+
+    /*Fonts*/
+    font-size: 100%;
+    --curren-text: "Inter", sans-serif;
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--white-color);
+    font-family: var(--curren-text);
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    width: 100%;
+    background-color: var(--back-color);
+    margin-bottom: 2.4rem;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.gallery{
+    display: flex;              
+    justify-content: center;
+    gap: 2rem;
+}
+
+.gallery-item{
+    width: 20rem;
+    height: 30rem;
+    transition: all .5s;
+}
+
+.gallery-item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.lightbox{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(from var(--back-color) r g b / 80%);
+    backdrop-filter: blur(2px); 
+}
+
+#close-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 2rem;
+    border: 2px solid var(--white-color);
+    border-radius: 100%;
+    transition: all .5s;
+}
+
+#close-btn:hover{
+    background-color: var(--blue-color);
+    cursor: pointer;
+}
+
+#lightbox-image{
+    width: 80%;
+}
