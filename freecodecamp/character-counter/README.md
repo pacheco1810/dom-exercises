@@ -1,4 +1,4 @@
-# Real-Time Character Counter - freeCodeCamp DOM Exercise
+# <p align="center">Real-Time Character Counter - freeCodeCamp DOM Exercise</p>
 
 ##  Problem Description
 
