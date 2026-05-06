@@ -50,7 +50,7 @@ freecodecamp/
 3. Watch the counter update in real-time
 4. Try typing more than 50 characters (it won't let you)
 
-Test cases to verify:
+### Test cases to verify:
 - Type "hello coder" → Shows "Character Count: 11/50"
 - Type "i am a programmer" → Shows "Character Count: 17/50"
 - Type "hello world" → Shows "Character Count: 11/50"
