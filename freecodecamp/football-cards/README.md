@@ -38,12 +38,15 @@ Build an interactive football team stats card application that displays team inf
 
 ## Folder Structure
 freecodecamp/
-├── character-counter/
-├── museum-gallery/
+
 └── football-cards/
+
 ├── index.html
+
 ├── styles.css
+
 ├── script.js
+
 └── README.md
 
 
