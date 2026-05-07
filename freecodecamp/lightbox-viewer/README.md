@@ -49,8 +49,6 @@ Build an interactive museum gallery that displays thumbnail images. When a thumb
 ## Folder Structure
 freecodecamp/
 
-├── character-counter/
-
 └── museum-gallery/
 
 ├── index.html
