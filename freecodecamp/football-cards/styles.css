@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+html{
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    /*Colors*/
+    --back-color:#1a1e29;
+    --blue-color:#132d46;
+    --green-color:#01c38e;
+    --white-color:#f4f4f4;
+
+    /*Fonts*/
+    font-size: 100%;
+    --titles-font:"Manrope", sans-serif;
+    --curren-text: "Inter", sans-serif;
+}
+
+body {
+    /* Page layout: h1 / main / footer */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 10px;
+
+    /* Full viewport height */
+    width: 100%;
+    min-height: 100dvh;
+
+    /* Base typography */
+    line-height: 1.5;
+    text-align: center;
+    font-family: var(--curren-text);
+    color: var(--blue-color);
+    background-color: var(--back-color);
+}
+
+.title,
+.options-label,
+.team-stats,
+footer {
+    color: var(--white-color);
+}
+
+.title {
+  margin: 1.3rem 0;
+  font-family: var(--titles-font);
+}
+
+.team-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  margin: 1.2rem 0;
+}
+
+.options-label {
+  font-size: 1.2rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-card {
+  background-color: var(--white-color);
+  padding: 1.3rem;
+  margin: 1.2rem;
+  width: 300px;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .team-stats {
+    flex-direction: column;
+  }
+}
