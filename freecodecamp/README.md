@@ -35,6 +35,7 @@ freecodecamp/
 |----------|--------|-------------|--------|
 | Character Counter | `character-counter/` | Real-time character counter with 50 character limit | ✅ Complete |
 | Museum Gallery Lightbox | `museum-gallery/` | Image gallery with lightbox that shows full-size images when thumbnails are clicked | ✅ Complete |
+| Football Team Cards | `football-cards/` | Team stats and player cards with position filtering | ✅ Complete |
 
 
 ##  How to Run
