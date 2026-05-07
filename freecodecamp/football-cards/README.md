@@ -1,6 +1,6 @@
 # <p align="center">Football Team Cards - freeCodeCamp DOM Exercise</p>
 
-## 📝 Problem Description
+##  Problem Description
 
 Build an interactive football team stats card application that displays team information and player cards. Users can filter players by position using a dropdown menu.
 
