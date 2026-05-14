@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    /*Colors*/
+    --back-color:#1a1e29;
+    --blue-color:#132d46;
+    --green-color:#01c38e;
+    --white-color:#f4f4f4;
+
+    /*Fonts*/
+    font-size: 100%;
+    --titles-font:"Manrope", sans-serif;
+    --curren-text: "Inter", sans-serif;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100dvh;
+    padding: 2rem;
+    font-family: var(--curren-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.theme-light{
+    background-color: var(--white-color);
+}
+
+.theme-dark{
+    background-color: var(--back-color);
+    color: var(--white-color);
+}
+
+.theme-dark ul li{
+    color: var(--back-color);
+}
+
+
+h1{
+    margin-bottom: 2rem;
+    font-family: var(--titles-font);
+    font-size: 3rem;
+    color: var(--green-color);
+}
+
+.theme-container{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    text-align: center;
+}
+
+#theme-switcher-button{
+    padding: .6rem 1.2rem;
+    background-color: var(--blue-color);
+    border: none;
+    font-family: var(--curren-text);
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#theme-switcher-button:hover{
+    background-color: #0d1f30;
+}
+
+ul{
+    list-style-type: none;
+    background-color: var(--white-color);
+}
+
+ul li{
+    padding: .4rem 0;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+ul li:hover{
+    background-color: #dcdcdc;
+    color: var(--blue-color);
+}
