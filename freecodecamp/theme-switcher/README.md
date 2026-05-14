@@ -1,4 +1,4 @@
-# Theme Switcher - freeCodeCamp DOM Exercise
+# <p align="center">Theme Switcher - freeCodeCamp DOM Exercise</p>
 
 ## Problem Description
 
