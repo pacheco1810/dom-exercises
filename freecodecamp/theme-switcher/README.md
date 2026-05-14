@@ -66,14 +66,6 @@ freecodecamp/
 
 └── README.md
 
-## File Details
-| File | Lines | Size | Purpose |
-|------|-------|------|---------|
-| index.html | ~30 | ~1.0 KB | Button, dropdown menu, and aria-live status container |
-| styles.css | ~70 | ~1.6 KB | Light/dark theme classes, hover effects, transitions |
-| script.js | ~35 | ~1.1 KB | Theme array, dropdown toggle, theme switching logic |
-| README.md | ~200 | ~5.0 KB | Complete documentation and usage guide |
-
 ## Usage Example
 1. Open index.html in any browser
 2. Click "Switch Theme" button
@@ -122,84 +114,95 @@ freecodecamp/
 
 ## Key Implementation Details
 ### JavaScript Logic:
-const themes = [
-    { name: "light", message: "Hello sunshine — Light theme is on!" },
-    { name: "dark", message: "The night is yours — Dark theme is on!" }
-];
-
-const switcherButton = document.getElementById("theme-switcher-button");
-const themeDropdown = document.getElementById("theme-dropdown");
-const statusMessage = document.querySelector('[aria-live="polite"]');
-
-// Toggle dropdown on button click
-switcherButton.addEventListener("click", () => {
-    themeDropdown.hidden = !themeDropdown.hidden;
-    switcherButton.setAttribute("aria-expanded", !themeDropdown.hidden);
-});
-
-// Handle theme selection
-themeDropdown.addEventListener("click", (e) => {
-    if (e.target.matches("li")) {
-        const selectedTheme = e.target.id.replace("theme-", "");
+        const themes = [
+            { name: "light", message: "Hello sunshine — Light theme is on!" },
+            { name: "dark", message: "The night is yours — Dark theme is on!" }
+        ];
         
-        document.body.classList.remove("theme-light", "theme-dark");
-        document.body.classList.add(`theme-${selectedTheme}`);
+        const switcherButton = document.getElementById("theme-switcher-button");
+        const themeDropdown = document.getElementById("theme-dropdown");
+        const statusMessage = document.querySelector('[aria-live="polite"]');
         
-        const currentTheme = themes.find(theme => theme.name === selectedTheme);
-        statusMessage.textContent = currentTheme.message;
+        // Toggle dropdown on button click
+        switcherButton.addEventListener("click", () => {
+            themeDropdown.hidden = !themeDropdown.hidden;
+            switcherButton.setAttribute("aria-expanded", !themeDropdown.hidden);
+        });
         
-        themeDropdown.hidden = true;
-        switcherButton.setAttribute("aria-expanded", "false");
-    }
-});
+        // Handle theme selection
+        themeDropdown.addEventListener("click", (e) => {
+            if (e.target.matches("li")) {
+                const selectedTheme = e.target.id.replace("theme-", "");
+                
+                document.body.classList.remove("theme-light", "theme-dark");
+                document.body.classList.add(`theme-${selectedTheme}`);
+                
+                const currentTheme = themes.find(theme => theme.name === selectedTheme);
+                statusMessage.textContent = currentTheme.message;
+                
+                themeDropdown.hidden = true;
+                switcherButton.setAttribute("aria-expanded", "false");
+            }
+        });
 
 ### Theme Classes CSS:
-.theme-light {
-    background-color: var(--white-color);
-}
-
-.theme-dark {
-    background-color: var(--back-color);
-    color: var(--white-color);
-}
+        .theme-light {
+            background-color: var(--white-color);
+        }
+        
+        .theme-dark {
+            background-color: var(--back-color);
+            color: var(--white-color);
+        }
 
 ## ARIA Implementation:
-<button id="theme-switcher-button" 
-        aria-haspopup="true" 
-        aria-expanded="false" 
-        aria-controls="theme-dropdown">
-    Switch Theme
-</button>
-
-<ul id="theme-dropdown" 
-    role="menu" 
-    aria-labelledby="theme-switcher-button" 
-    hidden>
-    <li role="menuitem" id="theme-light">Light</li>
-    <li role="menuitem" id="theme-dark">Dark</li>
-</ul>
-
-<div id="status" aria-live="polite"></div>
+        <button id="theme-switcher-button" 
+                aria-haspopup="true" 
+                aria-expanded="false" 
+                aria-controls="theme-dropdown">
+            Switch Theme
+        </button>
+        
+        <ul id="theme-dropdown" 
+            role="menu" 
+            aria-labelledby="theme-switcher-button" 
+            hidden>
+            <li role="menuitem" id="theme-light">Light</li>
+            <li role="menuitem" id="theme-dark">Dark</li>
+        </ul>
+        
+        <div id="status" aria-live="polite"></div>
 
 ## Customization Options
 ### Add New Theme:
 1. Add new li in HTML:
-<li role="menuitem" id="theme-ocean">Ocean</li>
+   
+        <li role="menuitem" id="theme-ocean">Ocean</li>
 
-2. Add theme object to array:
-{ name: "ocean", message: "Dive into calm — Ocean theme is on!" }
+3. Add theme object to array:
+   
+        { name: "ocean", message: "Dive into calm — Ocean theme is on!" }
 
-3. Add CSS class:
-.theme-ocean {
-    background-color: #006994;
-    color: #ffffff;
-}
+4. Add CSS class:
+   
+        .theme-ocean {
+            background-color: #006994;
+            color: #ffffff;
+        }
 
 ### Modify Messages:
 Change message property in themes array
 
 ### Change Colors:
 Modify CSS variables in :root
+
+## File Details
+| File | Lines | Size | Purpose |
+|------|-------|------|---------|
+| index.html | ~30 | ~1.0 KB | Button, dropdown menu, and aria-live status container |
+| styles.css | ~70 | ~1.6 KB | Light/dark theme classes, hover effects, transitions |
+| script.js | ~35 | ~1.1 KB | Theme array, dropdown toggle, theme switching logic |
+| README.md | ~200 | ~5.0 KB | Complete documentation and usage guide |
 
 ## Browser Support
 |Browser|	Version|	Status|
@@ -210,17 +213,14 @@ Modify CSS variables in :root
 |Edge|	90+	|✅|
 
 ## Edge Cases Handled
-Clicking same theme twice still updates (no errors)
-
-Dropdown closes automatically after theme selection
-
-ARIA attributes stay in sync with dropdown state
-
-Event delegation works for dynamically added items
-
-Theme persists until new selection
-
-Smooth transitions between themes
+<ul>
+<li>Clicking same theme twice still updates (no errors)</li>
+<li>Dropdown closes automatically after theme selection</li>
+<li>ARIA attributes stay in sync with dropdown state</li>
+<li>Event delegation works for dynamically added items</li>
+<li>Theme persists until new selection</li>
+<li>Smooth transitions between themes</li>
+</ul>
 
 ## Key Learning Outcomes
 1. After completing this exercise, you will understand:
