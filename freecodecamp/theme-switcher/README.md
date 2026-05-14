@@ -88,49 +88,37 @@ freecodecamp/
 
 ## Concepts Practiced
 ### JavaScript (DOM Manipulation & Events)
-getElementById() for element selection
-
-querySelector() with attribute selector
-
-addEventListener() for click events
-
-Toggling hidden attribute on dropdown
-
-setAttribute() for ARIA attributes
-
-classList.add() and classList.remove()
-
-e.target.matches() for event delegation
-
-replace() for string manipulation
-
-find() array method for theme lookup
+<ul>
+<li>getElementById() for element selection</li>
+<li>querySelector() with attribute selector</li>
+<li>addEventListener() for click events</li>
+<li>Toggling hidden attribute on dropdown</li>
+<li>setAttribute() for ARIA attributes</li>
+<li>classList.add() and classList.remove()</li>
+<li>e.target.matches() for event delegation</li>
+<li>replace() for string manipulation</li>
+<li>find() array method for theme lookup</li>
+</ul>
 
 ### ARIA Accessibility
-aria-haspopup="true" indicates button controls popup
-
-aria-expanded toggles between true/false
-
-aria-controls links button to dropdown
-
-role="menu" and role="menuitem" for menu semantics
-
-aria-labelledby associates dropdown with button
-
-aria-live="polite" announces updates to screen readers
-
-hidden attribute hides dropdown when closed
+<ul>
+<li>aria-haspopup="true" indicates button controls popup</li>
+<li>aria-expanded toggles between true/false</li>
+<li>aria-controls links button to dropdown</li>
+<li>role="menu" and role="menuitem" for menu semantics</li>
+<li>aria-labelledby associates dropdown with button</li>
+<li>aria-live="polite" announces updates to screen readers</li>
+<li>hidden attribute hides dropdown when closed</li>
+</ul>
 
 ### CSS Features
-CSS custom properties (variables)
-
-CSS transitions for smooth theme changes
-
-Hover effects on button and menu items
-
-Flexbox for centering layout
-
-Dark and light theme classes
+<ul>
+<li>CSS custom properties (variables)</li>
+<li>CSS transitions for smooth theme changes</li>
+<li>Hover effects on button and menu items</li>
+<li>Flexbox for centering layout</li>
+<li>Dark and light theme classes</li>
+</ul>
 
 ## Key Implementation Details
 ### JavaScript Logic:
