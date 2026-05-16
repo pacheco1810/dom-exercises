@@ -106,35 +106,35 @@ freecodecamp/
 
 ### JavaScript Logic (Fixed):
 
-const darkColorsArr = [
-    "#B72818",
-    "#FF4629",
-    "#E6AF00",
-    "#1D3ECF",
-    "#7912FF",
-    "#44F229",
-    "#C1CB00",
-    "#F24B6A",
-    "#4596FF",
-    "#00BF09"
-];
-
-function getRandomIndex() {
-    const randomIndex = Math.floor(darkColorsArr.length * Math.random());
-    return randomIndex;
-}
-
-const body = document.querySelector("body");
-const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
-
-function changeBackgroundColor() {
-    const color = darkColorsArr[getRandomIndex()];
-    bgHexCodeSpanElement.innerText = color;
-    body.style.backgroundColor = color;
-}
-
-const btn = document.querySelector("#click-btn");
-btn.addEventListener("click", changeBackgroundColor);
+        const darkColorsArr = [
+            "#B72818",
+            "#FF4629",
+            "#E6AF00",
+            "#1D3ECF",
+            "#7912FF",
+            "#44F229",
+            "#C1CB00",
+            "#F24B6A",
+            "#4596FF",
+            "#00BF09"
+        ];
+        
+        function getRandomIndex() {
+            const randomIndex = Math.floor(darkColorsArr.length * Math.random());
+            return randomIndex;
+        }
+        
+        const body = document.querySelector("body");
+        const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
+        
+        function changeBackgroundColor() {
+            const color = darkColorsArr[getRandomIndex()];
+            bgHexCodeSpanElement.innerText = color;
+            body.style.backgroundColor = color;
+        }
+        
+        const btn = document.querySelector("#click-btn");
+        btn.addEventListener("click", changeBackgroundColor);
 
 ### Common Debugging Fixes Applied:
 
@@ -151,11 +151,11 @@ btn.addEventListener("click", changeBackgroundColor);
 ### Add More Colors:
 Add new hex values to darkColorsArr array:
 
-const darkColorsArr = [
-    "#B72818",
-    "#FF4629",
-    // Add more colors
-];
+        const darkColorsArr = [
+            "#B72818",
+            "#FF4629",
+            // Add more colors
+        ];
 
 ### Change Button Style:
 Modify .btn class in CSS:
@@ -166,9 +166,9 @@ Modify .btn class in CSS:
 ### Modify Transitions:
 Change transition speed in body CSS:
 
-body {
-    transition: background-color 0.5s ease;
-}
+        body {
+            transition: background-color 0.5s ease;
+        }
 
 ## File Details
 
