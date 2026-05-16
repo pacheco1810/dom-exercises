@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    /*Colors*/
+    --back-color:#1a1e29;
+    --blue-color:#132d46;
+    --green-color:#01c38e;
+    --white-color:#f4f4f4;
+
+    /*Fonts*/
+    font-size: 100%;
+    --titles-font:"Manrope", sans-serif;
+    --curren-text: "Inter", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--back-color);
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--curren-text);
+}
+
+button, input, select, textarea {
+  font: inherit; 
+}
+
+h1{
+    margin-bottom: 2rem;
+    font-family: var(--titles-font);
+    font-size: 3rem;
+}
+
+.bg-information-container {
+    margin: 15px 0 25px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    padding: 1rem 1.2rem !important;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--back-color);
+    background-color: var(--green-color);
+    border: none;
+    transition: background .5s, color .5s;
+}
+
+.btn:hover {
+    background-image: radial-gradient(var(--blue-color), var(--green-color));
+    color: var(--white-color);
+}
