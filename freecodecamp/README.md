@@ -37,6 +37,7 @@ freecodecamp/
 | Museum Gallery Lightbox | `museum-gallery/` | Image gallery with lightbox that shows full-size images when thumbnails are clicked | ✅ Complete |
 | Football Team Cards | `football-cards/` | Team stats and player cards with position filtering | ✅ Complete |
 | Theme Switcher | `theme-switcher/` | Accessible dropdown menu that switches between light/dark themes with ARIA support | ✅ Complete |
+| Random Background Changer | `random-background-changer/` | Random color generator with hex display and debugging exercise | ✅ Complete |
 
 ##  How to Run
 
