@@ -37,6 +37,7 @@ freecodecamp/
 | Museum Gallery Lightbox | `museum-gallery/` | Image gallery with lightbox that shows full-size images when thumbnails are clicked | ✅ Complete |
 | Football Team Cards | `football-cards/` | Team stats and player cards with position filtering | ✅ Complete |
 | Theme Switcher | `theme-switcher/` | Accessible dropdown menu that switches between light/dark themes with ARIA support | ✅ Complete |
+| Palindrome Checker | `palindrome-checker/` | Checks if a word or phrase reads the same forwards and backwards, ignoring punctuation, case, and spacing | ✅ Complete |
 
 ##  How to Run
 
