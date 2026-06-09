@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+html{
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    /*Colors*/
+    --back-color:#1a1e29;
+    --blue-color:#132d46;
+    --green-color:#01c38e;
+    --white-color:#f4f4f4;
+
+    /*Fonts*/
+    font-size: 100%;
+    --titles-font:"Manrope", sans-serif;
+    --curren-text: "Inter", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100dvh;
+    padding: 3rem 1rem;
+    background-color: var(--white-color);
+    font-family: var(--curren-text);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    margin: 0 0 2rem 0;
+    font-family: var(--titles-font);
+    font-weight: 800;
+    color: var(--back-color);
+}
+
+form{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 900px;
+    height: 400px;
+    background-color: var(--back-color);
+    border-radius: 20px;
+}
+
+form p{
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+form .controls{
+    display: flex;
+}
+
+form input{
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    border: none;
+    border-bottom: 2px solid var(--green-color);
+    transition: all .5s;
+}
+
+form input::placeholder{
+    color: rgba(from var(--white-color) r g b / 50%);
+}
+form input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+form button{
+    width: 10rem;
+    height: 2rem;
+    background-color: var(--green-color);
+    border: none;
+    font-family: var(--curren-text);
+    color: var(--white-color);
+    transition: all .5s;
+}
+
+form button:hover{
+    background-color: rgba(from #009068 r g b / 500%);
+}
+
+.controls:has(#check-btn:hover) #text-input{
+    border-bottom: 2px solid #009068;
+}
+
+.wts_palindrome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 90%;
+    background-color: var(--green-color);
+    border-radius: 20px;
+}
