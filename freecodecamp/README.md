@@ -39,6 +39,7 @@ freecodecamp/
 | Theme Switcher | `theme-switcher/` | Accessible dropdown menu that switches between light/dark themes with ARIA support | ✅ Complete |
 | Random Background Changer | `random-background-changer/` | Random color generator with hex display and debugging exercise | ✅ Complete |
 | Palindrome Checker | `palindrome-checker/` | Checks if a word or phrase reads the same forwards and backwards, ignoring punctuation, case, and spacing | ✅ Complete |
+| RegEx Sandbox | `regex-sandbox/` | Interactive regex tester with pattern input, flags (i/g), match highlighting, and result display | ✅ Complete |
 
 ##  How to Run
 
