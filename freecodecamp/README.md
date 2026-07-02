@@ -41,6 +41,7 @@ freecodecamp/
 | Palindrome Checker | `palindrome-checker/` | Checks if a word or phrase reads the same forwards and backwards, ignoring punctuation, case, and spacing | ✅ Complete |
 | RegEx Sandbox | `regex-sandbox/` | Interactive regex tester with pattern input, flags (i/g), match highlighting, and result display | ✅ Complete |
 | Markdown Converter | `markdown-converter/` | Real-time Markdown to HTML converter with raw output and rendered preview | ✅ Complete |
+| Customer Complaint Form | `complaint-form/` | Form validation with regex patterns, conditional validation, and real-time visual feedback | ✅ Complete |
 
 ##  How to Run
 
